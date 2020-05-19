@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'dark_futureitalic';
+    src: url('../font/darkfutureitalic-1zee-webfont.woff2') format('woff2'),
+         url('../font/darkfutureitalic-1zee-webfont.woff') format('woff');
+      
+    font-weight: normal;
+    font-style: normal;
+
+}
+.main-indicator {
+    position: fixed;
+    right: 0;
+    //z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 588px;
+    height: 30px;
+    width: 40px;
+}
+.main-one, .main-two {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(61, 151, 187, 0.23);
+}
+
+.l-e-box {
+    position: relative;
+    height: 200px;
+    z-index: 2;
+}
+.l-effect {
+    position: absolute;
+    width: 770px;
+    height: 100px;
+    top: 0px;
+    left: 29.8%;   
+    
+}
+.laser-box{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.laser-beam {
+   // display: none;
+    position: absolute;
+    top: 37px;
+    //left: -15px;
+    left: -770px;
+    animation: run 10s infinite;
+    animation-delay: 3s;
+}
+@keyframes run
+{
+  0%{
+    left: -770px;
+  }
+  30%{
+    left: 2000px;
+  }
+  100%{
+      left: 2000px;
+  }
+}
+.title {
+    position: absolute;
+    top: 0;
+    left: 29%;
+    font-family: 'dark_futureitalic';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 150px;
+    text-align: center;
+    color: rgb(241, 239, 239);
+    text-shadow: 2px 2px 4px #d2e4e4, 5px 5px 10px #96bbca;
+      
+}
+.title .write {
+    //color: hsl(0, 0%, 80%);
+   //text-shadow: 0 0 0.1em currentColor;
+    //transform-style: preserve-3d;
+    animation: write linear both;
+    position: absolute;
+  }
+  
+  .title .laser {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* To avoid the blur getting masked by the clip-path we had to duplicate the element */
+    filter: blur(4px) contrast(10);
+    pointer-events: none;
+  }
+  
+  .title .laser {
+    display: inline-block;
+  }
+  
+  .title .laser {
+    color: hsl(180, 100%, 75%);
+    text-shadow: 0 0 0.1em currentColor;
+    transform: translateZ(5px);
+    animation: laser linear both;
+  }
+  
+  .title .write,
+  .title .laser {
+    animation-duration: 10s;
+    animation-delay: calc(0.3s + var(--word-index) * 160ms);
+    animation-iteration-count: infinite;
+  }
+@keyframes write {
+    //from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    //70%, to { clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
+    from, 10% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    30%, to { clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
+  }
+  
+  @keyframes laser {
+    //from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    //70%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
+    from, 10% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    30%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
+  }
+.h1{
+    position: absolute;
+    font-family: 'dark_futureitalic';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    padding-top: 350px;
+    padding-left: 300px;
+    color: rgba(235, 242, 245, 0.932);
+    font-size: 150px;
+    text-shadow: 0 0 30px rgba(27, 173, 231, 0.356);  
+}
+.h2{
+    width: 400px;
+    font-family: 'dark_futureitalic';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    padding-top: 300px;
+    color: rgba(61, 151, 187, 0.233);
+    font-size: 50px;
+    animation: font2 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-write {
+    font-family: 'dark_futureitalic';
+    font-weight: normal;
+    font-style: normal;
+    animation: menuwrite linear both;
+    position: absolute;
+    top: 0;
+    right: 200px;
+  }
+  
+.content-laser {
+    font-family: 'dark_futureitalic';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 200px;
+    /* To avoid the blur getting masked by the clip-path we had to duplicate the element */
+    filter: blur(4px) contrast(10);
+    pointer-events: none;
+    color: hsl(180, 100%, 75%);
+    text-shadow: 0 0 0.1em currentColor;
+    transform: translateZ(5px);
+    animation: menulaser linear both;
+  }
+  
+
+  
+  .content-write,
+  .content-laser {
+    animation-duration: 10s;
+    animation-delay: calc(0.3s + var(--word-index) * 160ms);
+    animation-iteration-count: infinite;
+  }
+@keyframes contentwrite {
+    from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    70%, to { clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
+    //from, 10% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    //30%, to { clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
+  }
+  
+  @keyframes contentlaser {
+    from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    70%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
+    //from, 10% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    //30%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
+  }
+.first
+{
+    animation: font 5s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+.second
+{
+    animation: font 5s ease-in-out infinite alternate;
+    transform-origin: center;
+    animation-delay: 2500ms;
+}
+
+@keyframes font{
+    from {
+        opacity: 100%;
+     
+        }
+       
+        50% {
+            opacity: 0%;  
+                  
+        }
+        to {
+            opacity: 100%;
+          
+        }
+}
+@keyframes font2{
+    from {
+        transform: translateY(0%);
+    }
+    33% {
+        transform: translateY(-2%);
+    }
+    66% {
+        transform: translateY(2%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+} 
+.firstSVG {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    width: 300px; 
+}
+    
+    
+.secondSVG {
+    padding-top: 250px;
+    overflow: visible;
+}
+#drawing-1 {
+    margin-top: 300px;
+}
+   
+#firstSVG {
+    overflow: visible;   
+}
+.drawing2 {
+    position: relative;
+}
+     
+#drawing2:focus {
+    outline: none;
+}
+.card {
+    transform-origin: bottom;
+    transition: 0.5s ease-in;
+}
+.card-1-focus {
+    transform: rotate(-75deg) translateX(200px) translateY(350px);
+}
+.card-2-focus {
+    transform: rotate(-50deg) translateX(200px) translateY(200px);
+}
+.card-3-focus { 
+    transform: rotate(-25deg) translateX(120px) translateY(80px);
+}
+.card-1-hover {
+    transform: rotate(-75deg) translateX(80px) translateY(350px);
+}
+.card-2-hover {
+    transform: rotate(-50deg) translateX(60px) translateY(200px);
+}
+.card-3-hover {
+    transform: rotate(-25deg) translateX(-60px) translateY(80px);
+}
+
+             
+.indicator {
+    position: absolute;
+    z-index: 0;
+    right: 0px;
+    width: 100px;
+    height: 5px;
+    background-color: rgba(61, 151, 187, 0.23);
+               
+}
+.indicator-one {
+    top: 2600px;
+}
+.indicator-two {
+    top: 3300px;
+}
+.indicator-three {
+    top: 4300px;
+}
+.stop-scrolling { 
+    height: 100%; 
+    overflow: hidden; 
+}

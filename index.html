@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/nmcss.css">
+    <script src="https://kit.fontawesome.com/242368e4d2.js" crossorigin="anonymous"></script>
+  </head>
+</head>    
+<body> 
+    <header>
+    </header>
+    <div class="Top-Container">
+        <div class="Right-Side">
+            <!-- <canvas id="swarm"></canvas> -->
+            <svg class="firstSVG" height="100%" viewBox="-150 200 850 786" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g class="cardPos">
+                    <g id="drawing2">
+                        <defs>
+                            <filter id="f1" x="0" y="0" width="200%" height="200%">
+                              <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                              <feColorMatrix class="cMatrix" result="matrixOut" in="offOut" type="matrix"
+                                values="0.24 0 0 0 0
+                                        0 0.59 0 0 0 
+                                        0 0 0.73 0 0 
+                                        0 0 0 0.5 0" />
+                              <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+                              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                            </filter>
+                          </defs>
+                        <g id="card1" class="card card-1">
+                            <path id="rect3727-8" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z" fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5"filter="url(#f1)" />
+                        </g>
+                        <g id="card2" class="card card-2">
+                            <path id="rect3727-8_2" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z" fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5" filter="url(#f1)"/>
+                        </g>
+                        <g id="card3" class="card card-3">
+                            <path id="rect3727-8_3" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z" fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5" filter="url(#f1)"/>
+                        </g>
+                        <g id="card4" class="card flip-card-front">
+                            <path id="rect3727-8_4" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z"  fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5" filter="url(#f1)"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <div class="menu-options">
+                <div class="option-container">
+                    <div class="option-1">
+                            <span class="option1 menu-write">Content 1</span>
+                            <span aria-hidden="true" class="menu-laser">Content 1</span>
+                    </div>
+                    <div class="option-2">
+                            <span class="option2 menu-write">Content 2</span>
+                            <span aria-hidden="true" class="menu-laser">Content 2</span>
+                    </div>
+                    <div class="option-3">
+                            <span class="option3 menu-write">Content 3</span>
+                            <span aria-hidden="true" class="menu-laser">Content 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="Left-Side">
+            <canvas id="c">   
+            </canvas>
+            <div class="h1" data-target-resolver></div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="l-e-box">
+            <div class="l-effect">
+                <div class="laser-box">
+                    <img src="img/laserbeam.png" class="laser-beam" alt="laser">
+                </div>
+            </div>
+            <div class="title">
+                <span class="write">PORTFOLIO</span>
+                <span aria-hidden="true" class="laser">PORTFOLIO</span>
+            </div>
+        </div>
+        <div class="h2">ss SCROLL ss</div>
+    </div>
+    <div class="bottom2">
+        <div class="main-indicator">
+            <span class="main-one"></span>
+            <span class="main-two"></span>
+        </div>
+        <div class="content-one-block block slide-in">
+            <div class="c-one-block-border block-border">
+                <div class="shape-outside"></div>
+                <div class="inside-tab">
+                    <i class="fas fa-angle-right"></i>
+                    <div class="tab-relevant">
+                        <div class="tab-container">
+                            <span class="span-one"></span>
+                            <span class="span-two"></span>
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <span class="content-write">ABOUT ME</span>
+                <span aria-hidden="true" class="content-laser">ABOUT ME</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore</p>
+            </div>
+        </div>
+        <span class="indicator-one indicator"></span>
+        <div class="content-two-block block slide-in">
+            <div class="c-two-block-border block-border">
+                <div class="shape-outside"></div>
+                <div class="inside-tab">
+                    <i class="fas fa-angle-right"></i>
+                    <div class="tab-relevant">
+                        <div class="tab-container">
+                            <span class="span-one"></span>
+                            <span class="span-two"></span>
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <span class="content-write">Content Holder Two</span>
+                <span aria-hidden="true" class="content-laser">Content Holder Two</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore</p>
+            </div>
+        </div>
+        <span class="indicator-two indicator"></span>
+        <div class="content-three-block block slide-in">
+            <div class="c-three-block-border block-border">
+                <div class="shape-outside"></div>
+                <div class="inside-tab">
+                    <i class="fas fa-angle-right"></i>
+                    <div class="tab-relevant">
+                        <div class="tab-container">
+                            <span class="span-one"></span>
+                            <span class="span-two"></span>
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <span class="content-write">Content Holder Three</span>
+                <span aria-hidden="true" class="content-laser">Content Holder Three</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore</p>
+            </div>
+        </div>
+        <span class="indicator-three indicator"></span>
+    </div>
+    
+    <!-- <a href="test.html">Test page</a> -->
+    <script src="js/contentBlock.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/cardMenu.js"></script>
+    <script src="js/textEffect.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+</body>
+</html>
