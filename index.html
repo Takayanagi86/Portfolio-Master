@@ -2,67 +2,42 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/nmcss.css">
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css"/>
     <script src="https://kit.fontawesome.com/242368e4d2.js" crossorigin="anonymous"></script>
   </head>
 </head>    
 <body> 
     <header>
     </header>
+    <div class="overlay"></div>
     <div class="Top-Container">
         <div class="Right-Side">
-            <!-- <canvas id="swarm"></canvas> -->
-            <svg class="firstSVG" height="100%" viewBox="-150 200 850 786" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g class="cardPos">
-                    <g id="drawing2">
-                        <defs>
-                            <filter id="f1" x="0" y="0" width="200%" height="200%">
-                              <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
-                              <feColorMatrix class="cMatrix" result="matrixOut" in="offOut" type="matrix"
-                                values="0.24 0 0 0 0
-                                        0 0.59 0 0 0 
-                                        0 0 0.73 0 0 
-                                        0 0 0 0.5 0" />
-                              <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
-                              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-                            </filter>
-                          </defs>
-                        <g id="card1" class="card card-1">
-                            <path id="rect3727-8" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z" fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5"filter="url(#f1)" />
-                        </g>
-                        <g id="card2" class="card card-2">
-                            <path id="rect3727-8_2" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z" fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5" filter="url(#f1)"/>
-                        </g>
-                        <g id="card3" class="card card-3">
-                            <path id="rect3727-8_3" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z" fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5" filter="url(#f1)"/>
-                        </g>
-                        <g id="card4" class="card flip-card-front">
-                            <path id="rect3727-8_4" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z"  fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5" filter="url(#f1)"/>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            <div class="menu-options">
-                <div class="option-container">
-                    <div class="option-1">
-                            <span class="option1 menu-write">Content 1</span>
-                            <span aria-hidden="true" class="menu-laser">Content 1</span>
-                    </div>
-                    <div class="option-2">
-                            <span class="option2 menu-write">Content 2</span>
-                            <span aria-hidden="true" class="menu-laser">Content 2</span>
-                    </div>
-                    <div class="option-3">
-                            <span class="option3 menu-write">Content 3</span>
-                            <span aria-hidden="true" class="menu-laser">Content 3</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="Left-Side">
+             <div class="nav-container">
+                 <a href="index.html" class="home-container n-c">
+                     <div class="nav nav-bg"></div>
+                     <div class="nav nav-overlay">HOME</div>
+                 </a>
+                 <div class="intro-container n-c">
+                     <div class="nav nav-bg"></div>
+                     <div class="nav nav-overlay">INTRO</div>
+                 </div>
+                 <div class="background-container n-c">
+                     <div class="nav nav-bg"></div>
+                     <div class="nav nav-overlay">BACKGROUND</div>
+                 </div>
+                 <div class="work-container n-c">
+                     <div class="nav nav-bg"></div>
+                     <div class="nav nav-overlay">WORK</div>
+                 </div>
+                 <a href="#" class="top-container n-c">
+                     <div class="nav nav-bg"></div>
+                     <div class="nav nav-overlay">TOP</div>
+                 </a>
+             </div>
             <canvas id="c">   
             </canvas>
-            <div class="h1" data-target-resolver></div>
+            <div class="name-title" data-target-resolver></div>
         </div>
     </div>
 
@@ -80,7 +55,45 @@
         </div>
         <div class="h2">ss SCROLL ss</div>
     </div>
-    <div class="bottom2">
+   
+    <div class="bottom-two">
+        <div class="parallax-container">
+            <div class="section-one">
+                <div class="parallax-image p-i-one"></div>
+                <div class="parallax-block">
+                    <div class="svg-container">
+                        <div class="archer-container svg-archery">
+                            <svg width="200" height="200" viewBox="0 0 458 466" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="archer" >
+                                <g id="Group">
+                                <path id="Vector" d="M204.967 134.02C176.583 134.02 153.49 110.522 153.49 81.6398C153.49 52.7594 176.583 29.2637 204.967 29.2637C233.346 29.2637 256.432 52.7594 256.432 81.6398C256.432 110.523 233.346 134.02 204.967 134.02Z" fill="#3D97BB" fill-opacity="0.233"/>
+                                <path id="Vector_2" d="M85.9186 423.108L129.469 349.552C131.506 346.11 134.408 338.603 135.221 334.678L151.411 234.634L149.976 234.546C138.974 233.868 129.764 227.947 125.336 218.707C120.907 209.468 121.992 198.438 128.239 189.202L154.531 150.326C158.596 144.314 164.369 140.725 172.495 140.725C172.682 140.725 252.962 140.725 252.962 140.725L290.47 16.4525C288.689 16.1652 286.895 16.0141 285.087 16.0141C280.741 16.0141 277.217 12.4289 277.217 8.00704C277.217 3.58515 280.741 0 285.087 0C309.814 0 332.628 18.3371 349.328 51.6344C361.967 76.8346 370.069 108.548 372.831 142.862C380.191 146.423 385.292 154.061 385.292 162.889C385.292 171.393 380.56 178.789 373.635 182.505C372.09 221.931 363.598 258.686 349.329 287.137C332.629 320.434 309.815 338.771 285.088 338.771C280.742 338.771 277.218 335.186 277.218 330.764C277.218 326.342 280.742 322.757 285.088 322.757C286.273 322.757 287.452 322.691 288.626 322.566L252.267 238.193C249.802 239.356 247.097 240.056 244.252 240.201L242.559 259.444C242.51 260.52 242.695 261.153 242.779 261.549L280.289 437.676C282.971 450.269 275.083 462.736 262.703 465.467C261.087 465.82 259.444 466 257.821 466C247.1 466 237.668 458.251 235.394 447.574L202.194 291.689H191.061L180.17 344.31C178.293 353.382 173.518 365.727 168.818 373.667L125.268 447.225C121.073 454.311 113.711 458.54 105.574 458.54C101.414 458.54 97.3226 457.38 93.741 455.185C82.8938 448.537 79.3849 434.148 85.9186 423.108ZM305.204 22.1895L269.426 140.726H356.809C351.517 84.6305 331.097 38.3598 305.204 22.1895ZM357.756 185.054H256.045L252.163 197.919C260.127 201.616 265.45 210.024 264.89 219.431C264.773 221.397 264.385 223.283 263.8 225.074L303.638 317.518C332.26 301.122 354.546 248.065 357.756 185.054Z" fill="#3D97BB" fill-opacity="0.233"/>
+                                </g>
+                                <path id="Arrow" class="arrow" d="M447.303 165.303C450.232 162.374 450.232 157.626 447.303 154.697L399.574 106.967C396.645 104.038 391.896 104.038 388.967 106.967C386.038 109.896 386.038 114.645 388.967 117.574L431.393 160L388.967 202.426C386.038 205.355 386.038 210.104 388.967 213.033C391.896 215.962 396.645 215.962 399.574 213.033L447.303 165.303ZM175 167.5H442V152.5H175V167.5Z" fill="#3D97BB" fill-opacity="0.233"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="target-container svg-archery">
+                            <svg width="150" height="200" viewBox="0 0 297 297" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="target">
+                                <path id="Vector" d="M18.468 33.394H28.326L21.416 27.348C17.211 23.668 16.785 17.276 20.465 13.07C24.145 8.86301 30.539 8.43701 34.743 12.118L41.742 18.242V10.12C41.742 4.53201 46.272 0.00100708 51.861 0.00100708C57.449 0.00100708 61.98 4.53201 61.98 10.12L62.68 36.651L73.098 45.678C95.993 23.377 127.244 9.61501 161.654 9.61501C231.68 9.61501 288.65 66.585 288.65 136.612C288.65 176.475 270.182 212.1 241.362 235.4L285.686 279.725C289.638 283.677 289.638 290.084 285.686 294.036C283.71 296.012 281.121 297 278.531 297C275.941 297 273.352 296.012 271.376 294.036L224.356 247.016C205.846 257.569 184.444 263.607 161.655 263.607C138.866 263.607 117.463 257.569 98.953 247.016L51.934 294.036C49.957 296.012 47.369 297 44.778 297C42.188 297 39.599 296.012 37.623 294.036C33.671 290.084 33.671 283.677 37.623 279.725L81.948 235.4C53.127 212.1 34.659 176.475 34.659 136.612C34.659 108.262 43.999 82.053 59.76 60.897L50.747 52.92L18.47 53.632C12.881 53.632 8.35102 49.102 8.35102 43.513C8.34902 37.925 12.879 33.394 18.468 33.394ZM54.896 136.611C54.896 195.477 102.788 243.369 161.655 243.369C220.521 243.369 268.413 195.477 268.413 136.611C268.413 77.744 220.521 29.852 161.655 29.852C133.31 29.852 107.511 40.959 88.379 59.046L104.648 73.281C119.762 59.661 139.754 51.355 161.656 51.355C208.666 51.355 246.911 89.599 246.911 136.61C246.911 183.62 208.666 221.864 161.656 221.864C114.645 221.864 76.401 183.62 76.401 136.61C76.401 118.774 81.915 102.208 91.315 88.506L75.044 74.268C62.373 91.822 54.896 113.359 54.896 136.611ZM96.638 136.611C96.638 172.461 125.804 201.627 161.655 201.627C197.505 201.627 226.671 172.461 226.671 136.611C226.671 100.76 197.505 71.594 161.655 71.594C145.824 71.594 131.3 77.288 120.012 86.726L136.323 100.998C143.442 95.711 152.195 92.58 161.655 92.58C185.449 92.58 204.806 112.331 204.806 136.61C204.806 160.887 185.449 180.64 161.655 180.64C137.861 180.64 118.504 160.887 118.504 136.61C118.504 129.361 120.24 122.524 123.293 116.488L106.685 101.955C100.332 111.996 96.638 123.877 96.638 136.611ZM138.742 136.611C138.742 149.73 149.02 160.403 161.655 160.403C174.289 160.403 184.567 149.73 184.567 136.611C184.567 123.492 174.289 112.82 161.655 112.82C158.3 112.82 155.116 113.578 152.242 114.928L168.318 128.994C172.524 132.674 172.95 139.066 169.27 143.272C167.269 145.559 164.467 146.728 161.651 146.728C159.286 146.728 156.91 145.904 154.991 144.223L139.471 130.643C138.995 132.553 138.742 134.552 138.742 136.611Z" fill="#3D97BB" fill-opacity="0.233"/>
+                                </g>
+                            </svg>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-two">
+                <div class="parallax-image p-i-two"></div>
+                <div class="parallax-block"></div>
+            </div>
+            <div class="section-three">
+                <div class="parallax-image p-i-three">
+                    <img src="img/netmatters.png">
+                </div>
+                <div class="parallax-block"></div>
+            </div>
+        </div>
         <div class="main-indicator">
             <span class="main-one"></span>
             <span class="main-two"></span>
@@ -92,15 +105,16 @@
                     <i class="fas fa-angle-right"></i>
                     <div class="tab-relevant">
                         <div class="tab-container">
+                            <div class="tab-content"></div>
                             <span class="span-one"></span>
                             <span class="span-two"></span>
                             <i class="fas fa-angle-left"></i>
                         </div>
                     </div>
                 </div>
-                <span class="content-write">ABOUT ME</span>
-                <span aria-hidden="true" class="content-laser">ABOUT ME</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore</p>
+                <span class="content-write">INTRO</span>
+                <span aria-hidden="true" class="content-laser">INTRO</span>
+                <p>Hey, I'm Jeremy. I'm currently a junior web developer in training. I have spent most my life fixing other people's computers but now I am taking my hand to trying to make things look pretty on the web. When im not sat in front of the screen, I do like to get away from it all by drowning myself in music, maybe play some tennis/badminton but if the weather is nice, shoot some arrows down the range. </p>
             </div>
         </div>
         <span class="indicator-one indicator"></span>
@@ -111,25 +125,47 @@
                     <i class="fas fa-angle-right"></i>
                     <div class="tab-relevant">
                         <div class="tab-container">
+                            <div class="tab-content"></div>
                             <span class="span-one"></span>
                             <span class="span-two"></span>
                             <i class="fas fa-angle-left"></i>
                         </div>
                     </div>
                 </div>
-                <span class="content-write">Content Holder Two</span>
-                <span aria-hidden="true" class="content-laser">Content Holder Two</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore</p>
+                <span class="content-write">BACKGROUND</span>
+                <span aria-hidden="true" class="content-laser">BACKGROUND</span>
+                <p>So having only just starting out on this new technical journey I have immersed myself in everything it currently has to offer. Starting from HTML5 to CSS3, I have gone on to learn Javascript, PHP, Laravel, C#, React and also looking to learn Vue. I may be still very raw with the frameworks but as a starting point into this career I am very confident with my ability and where I stand while using this to springboard into a fruitful career.</p>
             </div>
         </div>
         <span class="indicator-two indicator"></span>
         <div class="content-three-block block slide-in">
             <div class="c-three-block-border block-border">
                 <div class="shape-outside"></div>
-                <div class="inside-tab">
-                    <i class="fas fa-angle-right"></i>
+                <div class="inside-tab i-t-carousel">
+                    <i class="fas fa-angle-right i-t-carousel"></i>
                     <div class="tab-relevant">
                         <div class="tab-container">
+                            <div class="tab-content tab-content-one">
+                                <div class="shape-outside-two"></div>
+                                <div>
+                                    <h3>Netmatters Site</h3>
+                                    <p>At Netmatters every person on the scheme is given the task of recreating the Netmatters site from scratch using just HTML/CSS first, then as we progressed on the course we add Javascript and PHP. This is my version of that site.</p>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-content-two">
+                                <div class="shape-outside-two"></div>
+                                <div>
+                                    <h3>Pairs Project</h3>
+                                    <p>At Netmatters every person on the scheme is given the task of working in a pair to create a website from a concept with each person working on elements independently yet having the end result look like one developer has made it.</p>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-content-three">
+                                <div class="shape-outside-two"></div>
+                                <div>
+                                    <h3>API Project</h3>
+                                    <p>While at Netmatters I was allowed to test my C# ability with a task to create a simple app that would connect to some different API's with different endpoints. This is what I created .</p>
+                                </div>
+                            </div>
                             <span class="span-one"></span>
                             <span class="span-two"></span>
                             <i class="fas fa-angle-left"></i>
@@ -137,21 +173,37 @@
                     </div>
                 </div>
                 
-                <span class="content-write">Content Holder Three</span>
-                <span aria-hidden="true" class="content-laser">Content Holder Three</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis libero facere. Suscipit odit quas nemo, enim laudantium, provident repellendus natus nostrum facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium. Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores temporeNon omnis aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde? Tempora dolorem, ad quidem quis adipisci dolores tempore</p>
+                <span class="content-write">WORK</span>
+                <span aria-hidden="true" class="content-laser">WORK</span>
+                <div class="carousel-container">
+                    <div class="fade">
+                        <div>
+                            <img class="carousel-img-one" src="img/netmatters.png" alt="netmatters-project">
+                        </div>
+                        <div>
+                            <img class="carousel-img-two" src="img/pairs.png" alt="pairs-project">
+                        </div>
+                        <div>
+                            <img class="carousel-img-three" src="img/api.png" alt="api-project">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <span class="indicator-three indicator"></span>
     </div>
     
     <!-- <a href="test.html">Test page</a> -->
-    <script src="js/contentBlock.js"></script>
-    <script src="js/portfolio.js"></script>
-    <script src="js/cardMenu.js"></script>
-    <script src="js/textEffect.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/contentBlock.js"></script>
+    <script src="js/archerSvg.js"></script>
+    <script src="js/textEffect.js"></script>
+    <script src="js/nav.js"></script>
+    
+    
 </body>
 </html>

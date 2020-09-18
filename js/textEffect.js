@@ -101,4 +101,31 @@ const resolver = {
   
   resolver.resolve(options, callback);
 
+const title = document.querySelector('.name-title');
+let count = 0;
+function checkTitle(e) {
+  let scroll = window.scrollY;
+  
+  if (scroll >= 1000){
+    title.classList.add('display');
+  };
+  if (scroll <= 999){
+    title.classList.remove('display');
+  };
+  if (scroll >= 600){
+    navAppear();
+    count = 1;
+  }else if (count == 1 && scroll <= 599){
+    navHide();
+    count = 0;
+  };
+}
+const width = screen.width;
+let setWidth = "" + (width-625)/2 + "px";
+window.addEventListener('load', () => {
+    
+    title.style.paddingLeft = setWidth;
+    console.log('load')
+})
+window.addEventListener('scroll', checkTitle);
   

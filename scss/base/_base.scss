@@ -10,7 +10,6 @@
 .main-indicator {
     position: fixed;
     right: 0;
-    //z-index: 1;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -22,7 +21,7 @@
     display: block;
     width: 100%;
     height: 3px;
-    background-color: rgba(61, 151, 187, 0.23);
+    background-color: rgba(61, 151, 187, 1);
 }
 
 .l-e-box {
@@ -44,10 +43,8 @@
     height: 100%;
 }
 .laser-beam {
-   // display: none;
     position: absolute;
     top: 37px;
-    //left: -15px;
     left: -770px;
     animation: run 10s infinite;
     animation-delay: 3s;
@@ -78,9 +75,6 @@
       
 }
 .title .write {
-    //color: hsl(0, 0%, 80%);
-   //text-shadow: 0 0 0.1em currentColor;
-    //transform-style: preserve-3d;
     animation: write linear both;
     position: absolute;
   }
@@ -89,7 +83,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* To avoid the blur getting masked by the clip-path we had to duplicate the element */
     filter: blur(4px) contrast(10);
     pointer-events: none;
   }
@@ -112,29 +105,28 @@
     animation-iteration-count: infinite;
   }
 @keyframes write {
-    //from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
-    //70%, to { clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
     from, 10% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
     30%, to { clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
   }
   
   @keyframes laser {
-    //from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
-    //70%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
     from, 10% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
     30%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
   }
-.h1{
+.name-title{
+    //display: none;
+    opacity: 0;
+    transition: 1s ease-in-out;
     position: absolute;
     font-family: 'dark_futureitalic';
     font-weight: normal;
     font-style: normal;
     text-align: center;
-    padding-top: 350px;
-    padding-left: 300px;
-    color: rgba(235, 242, 245, 0.932);
+    top: 75px;
+    padding-left: 30%;
+    color: #f1efef;
     font-size: 150px;
-    text-shadow: 0 0 30px rgba(27, 173, 231, 0.356);  
+    text-shadow: 2px 2px 4px #d2e4e4, 5px 5px 10px #96bbca;
 }
 .h2{
     width: 400px;
@@ -156,8 +148,10 @@
     font-style: normal;
     animation: menuwrite linear both;
     position: absolute;
+    z-index: 1001;
     top: 0;
     right: 200px;
+    font-size: 40px;
   }
   
 .content-laser {
@@ -166,12 +160,14 @@
     font-style: normal;
     display: inline-block;
     position: absolute;
+    z-index: 1001;
     top: 0;
     right: 200px;
+    font-size: 40px;
     /* To avoid the blur getting masked by the clip-path we had to duplicate the element */
     filter: blur(4px) contrast(10);
     pointer-events: none;
-    color: hsl(180, 100%, 75%);
+    //color: hsl(180, 100%, 75%);
     text-shadow: 0 0 0.1em currentColor;
     transform: translateZ(5px);
     animation: menulaser linear both;
@@ -188,15 +184,11 @@
 @keyframes contentwrite {
     from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
     70%, to { clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
-    //from, 10% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
-    //30%, to { clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
   }
   
   @keyframes contentlaser {
     from, 30% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
     70%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
-    //from, 10% { clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
-    //30%, to { clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
   }
 .first
 {
@@ -245,55 +237,6 @@
 body::-webkit-scrollbar {
     display: none;
 } 
-.firstSVG {
-    position: absolute;
-    z-index: 10;
-    right: 0;
-    top: 0;
-    width: 300px; 
-}
-    
-    
-.secondSVG {
-    padding-top: 250px;
-    overflow: visible;
-}
-#drawing-1 {
-    margin-top: 300px;
-}
-   
-#firstSVG {
-    overflow: visible;   
-}
-.drawing2 {
-    position: relative;
-}
-     
-#drawing2:focus {
-    outline: none;
-}
-.card {
-    transform-origin: bottom;
-    transition: 0.5s ease-in;
-}
-.card-1-focus {
-    transform: rotate(-75deg) translateX(200px) translateY(350px);
-}
-.card-2-focus {
-    transform: rotate(-50deg) translateX(200px) translateY(200px);
-}
-.card-3-focus { 
-    transform: rotate(-25deg) translateX(120px) translateY(80px);
-}
-.card-1-hover {
-    transform: rotate(-75deg) translateX(80px) translateY(350px);
-}
-.card-2-hover {
-    transform: rotate(-50deg) translateX(60px) translateY(200px);
-}
-.card-3-hover {
-    transform: rotate(-25deg) translateX(-60px) translateY(80px);
-}
 
              
 .indicator {
@@ -302,19 +245,57 @@ body::-webkit-scrollbar {
     right: 0px;
     width: 100px;
     height: 5px;
-    background-color: rgba(61, 151, 187, 0.23);
-               
+    background-color: rgba(61, 151, 187, 1);             
 }
 .indicator-one {
-    top: 2600px;
+    top: 1600px;
 }
 .indicator-two {
-    top: 3300px;
+    top: 2900px;
 }
 .indicator-three {
-    top: 4300px;
+    top: 4200px;
 }
 .stop-scrolling { 
     height: 100%; 
     overflow: hidden; 
+}
+
+.c-two-block-border{
+    p{
+        margin-top: 70px;
+        font-size: 25px;
+        text-shadow: 2px 2px 4px #d2e4e4, 5px 5px 10px #96bbca;
+        color: #f1efef;
+    }
+}
+.parallax-image {
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.8);
+    opacity: 0.4;
+    transition: 1.5s ease-in-out;
+}
+
+
+.parallax-block {
+    height: 700px;
+    width: 100%;
+    background-color: #f1efef;
+}
+
+
+#target {
+    transform: scale(0.8);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    z-index: 3000;
 }

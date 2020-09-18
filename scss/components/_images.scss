@@ -1,0 +1,50 @@
+
+.p-i-one {
+    background-image: url(../img/computer.jpg);
+}
+.p-i-two {
+    background-image: url(../img/computer.jpg);
+    transform: scaleX(-1);
+    
+}
+.p-i-three {
+    background-image: url(../img/netmatters.png);
+    overflow: hidden;
+    img{
+        height: auto;
+        width: 100%;
+        transform: rotate(-8deg) scale(1.2);
+        position: absolute;
+        top: -20px;
+        left: -100px;
+    }
+}
+.parallax-colour {
+    filter: grayscale(0);
+    opacity: 1;
+    transition: 3s ease-in-out;
+}
+.carousel-img-one{
+    transform: scale(0.7);
+    position: absolute;
+    top: -150px;
+    left: -295px;
+    filter: grayscale(0.8);
+    opacity: 0.4;
+}
+.carousel-img-two{
+    transform: scale(0.61);
+    position: absolute;
+    top: -195px;
+    left: -385px;
+    filter: grayscale(0.8);
+    opacity: 0.4;  
+}
+.carousel-img-three{
+    transform: scale(1.65);
+    position: absolute;
+    top: 115px;
+    left: 215px;
+    filter: grayscale(0.8);
+    opacity: 0.4;
+}
